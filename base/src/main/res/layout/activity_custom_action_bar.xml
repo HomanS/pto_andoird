@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="nu.pto.androidapp.CustomActionBarActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/menu_list_selector">
+
+        <ImageView android:layout_width="wrap_content"
+            android:id="@+id/btn_cancel_custom_action_bar_activity"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_cancel"
+            android:onClick="onMenuIconClick"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/custom_action_bar_activity_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:font_name="@string/FONT_MEDIUM"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/btn_save_custom_action_bar_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_check"
+            android:onClick="onMenuIconClick"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/custom_action_bar_container"
+        android:orientation="horizontal"/>
+</RelativeLayout>

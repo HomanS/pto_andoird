@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start auth dimensions -->
+    <dimen name="auth_fragment_login_margin_top">150dp</dimen>
+    <dimen name="auth_fragment_margin_left_right">30dp</dimen>
+    <dimen name="auth_fragment_font_size">25dp</dimen>
+    <dimen name="auth_fragment_font_size_small">20dp</dimen>
+    <!-- end auth dimensions -->
+
+    <!-- start homepage dimensions -->
+    <!-- end homepage dimensions -->
+</resources>
+    <!--   xlarge   -->

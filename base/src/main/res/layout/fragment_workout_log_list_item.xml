@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/iv_log_list_item"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_log_list_item">
+            <nu.pto.androidapp.base.ui.PtoTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/workout_log_list_item_name"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                />
+            <nu.pto.androidapp.base.ui.PtoTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/workout_log_list_item_date"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                style=""
+                />
+            </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewRightMessages"
+            style="@style/image_view_arrow_right_home"
+            android:src="@drawable/arrow"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

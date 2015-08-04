@@ -1,0 +1,66 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="30dp"
+
+        >
+
+    <ImageButton
+            android:id="@+id/ib_info"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:padding="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/hud_color"
+
+            android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            >
+
+        <ImageView
+                android:id="@+id/iv_workout_image_list_item_workout"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_workout_image_list_item_workout"
+                android:orientation="vertical">
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/ptv_workout_name_lit_item_workout"
+                    style="@style/text_view_title_default"
+                    android:layout_marginRight="20dp"
+                    app:font_name="@string/FONT_REGULAR"/>
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/ptv_workout_end_date_lit_item_workout"
+                    style="@style/text_view_workout_end_date"
+                    app:font_name="@string/FONT_REGULAR"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/imageViewRightMessages"
+                style="@style/image_view_arrow_right_home"
+                android:src="@drawable/arrow"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+    </RelativeLayout>
+
+
+</FrameLayout>

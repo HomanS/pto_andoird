@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/menu_list_selector">
+
+        <ImageView
+                android:id="@+id/iv_menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMenuIconClick"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/activity_app_title_padding"
+                android:src="@drawable/icon_menu"/>
+
+        <LinearLayout
+            android:id="@+id/fragment_title_tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_small" />
+        </LinearLayout>
+        <nu.pto.androidapp.base.ui.PtoTextView
+                android:id="@+id/fragment_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/activity_app_title"
+                app:font_name="@string/FONT_REGULAR"/>
+
+    </RelativeLayout>
+
+    <nu.pto.androidapp.base.ui.PtoDrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="0dp"
+                android:id="@+id/image_download_progress"
+                android:gravity="center_horizontal"
+                android:background="#aaaaaa"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:text=""/>
+        </FrameLayout>
+
+        <ListView
+                android:id="@+id/menu_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="#fbfbfb"
+                android:choiceMode="singleChoice"
+                android:divider="@color/menu_list_divider"
+                android:dividerHeight="1dp"
+                android:drawSelectorOnTop="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"/>
+
+    </nu.pto.androidapp.base.ui.PtoDrawerLayout>
+
+
+</LinearLayout>
+

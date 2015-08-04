@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbfbfb"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_house"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="8dp" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font_name="@string/FONT_REGULAR"
+            android:text="@string/string_pto"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColorHighlight="@android:color/white"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+    <nu.pto.androidapp.base.ui.BadgeView
+        android:id="@+id/badge_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:layout_marginTop="7dp" />
+
+</FrameLayout>

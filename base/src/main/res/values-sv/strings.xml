@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ERROR messages -->
+    <string name="something_goes_wring">Något gick snett</string>
+    <string name="version_code_error">Version code error</string>
+    <string name="wrong_access_token">Wrong access token</string>
+    <string name="error_no_internet_dialog_title">Uppkopplingsfel!</string>
+    <string name="error_no_internet_dialog_descroption">Kontrollera din Internetuppkoppling</string>
+    <string name="string_youtube_init_error">Kan inte spela upp video</string>
+    <string name="string_invalid_input_fields">Ogiltig uppgift</string>
+    <string name="version_code_error_dialog_title">Info</string>
+    <string name="version_code_error_dialog_message">There is a new version of the PT+ app available on Play Store. Get it now!</string>
+    <!-- font names -->
+
+
+    <!-- menu titles -->
+    <string name="menu_title_home">Start</string>
+    <string name="menu_title_workouts">Träningsprogram</string>
+    <string name="menu_title_diet">Kostråd</string>
+    <string name="menu_title_statistics">Framgång</string>
+    <string name="menu_title_messages">Meddelanden</string>
+    <string name="menu_title_settings">Inställningar</string>
+    <string name="menu_title_tech_support">Teknisk support</string>
+    <string name="menu_title_logout">Logga ut</string>
+
+    <!-- application -->
+    <string name="support_confirm">Ok</string>
+    <string name="string_cancel">Avbryt</string>
+    <string name="string_application_name_p1">pt</string>
+    <string name="string_application_name_p2">+</string>
+    <string name="string_ok">Ja</string>
+    <string name="string_no">Nej</string>
+    <string name="string_pt">pt</string>
+    <string name="string_youtube">Youtube</string>
+    <string name="string_pto">pt+</string>
+    <string name="string_pto_uppercase">PT+</string>
+
+    <!-- workout -->
+    <string name="fragment_title_workouts">Träningsprogram</string>
+    <string name="workout_log_title">Logg</string>
+    <string name="string_new_workout">Nytt träningspass - </string>
+    <string name="string_workout_successfully_completed">Träningen du just genomfört är sparad och skickad till mig. MVH</string>
+
+    <!--training-->
+    <string name="string_start_timer">STARTA TID</string>
+    <string name="string_stop_timer">STOPPA TIDTAGNING</string>
+    <string name="string_clear">KLAR</string>
+    <string name="string_training_paused">TRÄNING PAUSAD</string>
+    <string name="string_leave_workout">Vill du avsluta ditt träningspass?</string>
+    <string name="string_best_time">Bästa möjliga</string>
+    <string name="string_repeat">Repetitioner</string>
+    <string name="string_time_unit">Gånger</string>
+    <string name="string_effort">Ansträngning</string>
+    <string name="string_rest">Vila</string>
+    <string name="string_distance">Distans</string>
+
+    <!-- trainer -->
+    <string name="string_personal_trainer">Din Personliga Tränare</string>
+
+
+    <!-- statistics -->
+    <string name="fragment_title_statistics">Framgång</string>
+    <string name="string_trainings_per_week">Antal träningstillfällen per vecka</string>
+
+
+    <!-- personal -->
+    <string name="string_forgot_password"><u>Glömt lösen?</u></string>
+    <string name="string_return"><u>Tillbaka till start</u></string>
+    <string name="string_mobile_phone_number">Telefonnummer</string>
+    <string name="dialog_title_year_of_birth">Födelseår</string>
+    <string name="string_last_name">Efternamn</string>
+    <string name="string_first_name">Förnamn</string>
+    <string name="string_personal_info">Personlig information</string>
+    <string name="string_profile">Profilbild</string>
+    <string name="string_change_picture">Det här är din nuvarande bild. För att byta bild, ladda upp en ny.</string>
+    <string name="string_change_picture_button">BYT BILD</string>
+    <string name="string_email">E-postadress</string>
+    <string name="string_select_file_to_upload">För att byta bild, ladda upp en ny.</string>
+    <string name="string_repeat_new_password">Repetera nytt lösenord</string>
+    <string name="string_new_password">Nytt lösenord</string>
+    <string name="string_old_password">Gammalt lösenord</string>
+    <string name="string_settings">Inställningar</string>
+    <string name="string_change_password">ÄNDRA LÖSENORD</string>
+    <string name="string_password">Lösenord</string>
+    <string name="string_year_of_birth">Födelseår</string>
+    <string name="string_phone_number">Telefonnummer</string>
+    <string name="string_email_for_password_recovery">Ange e-postadress för att få lösenord</string>
+    <string name="string_insert_new_password">Skicka nytt lösenord</string>
+    <string name="string_login">Logga in</string>
+    <string name="string_change_personal_info">ÄNDRA UPPGIFTER</string>
+    <string name="string_photo_from_library">Välj en bild från ditt album</string>
+    <string name="string_photo_from_camera">Ta en ny bild</string>
+
+    <!-- support-->
+    <string name="support_phone_message">Vill du ringa supporten?</string>
+    <string name="support_sms_message">Vill du skicka SMS för support?</string>
+
+    <string name="support_body_head">Låt denna information skickas med i ditt SMS till Supporten\nName: %1$s\nModel: %2$s</string>
+    <string name="support_subject">Supportärende</string>
+    <string name="support_mail_chooser_title">Skicka e-mail du info@pto.nu</string>
+    <string name="string_title_technical_support">Teknisk support</string>
+    <string name="string_support_text">Vi på pt+ vill att du som kund ska vara nöjd med de tjänster du har köpt genom oss. Har du frågor kring appen eller stöter på tekniska problem är du välkommen att höra av dig till oss så ska vi hjälpa dig på bästa sätt.\n\nBästa hälsningar\nTeam pt+</string>
+    <string name="string_support_via_email">Support via e-post</string>
+    <string name="string_support_via_phone">Support via telefon</string>
+    <string name="string_support_via_sms">Support via SMS</string>
+
+
+    <!-- activities log -->
+    <string name="string_activity_log">Aktivitetslogg</string>
+
+
+    <!-- messages -->
+    <string name="string_messages">Meddelanden</string>
+    <string name="string_send">Skicka</string>
+    <string name="string_message">Meddelande</string>
+    <!---->
+    <string name="string_message_was_not_send">Ditt meddelande kunde inte skickas.</string>
+    <!---->
+    <string name="string_cannot_send_empty_message">Du kan inte skicka ett tomt meddelande.</string>
+
+    <!-- diet -->
+    <string name="string_new_diet">Nytt kostråd - </string>
+    <string name="string_active_until">Giltig till </string>
+    <string name="string_diet_search_hint">Sök</string>
+    <string name="string_diet">Kostråd</string>
+
+
+   <!-- subscription -->
+    <string name="button_subscribe_text">Avsluta prenumeration</string>
+    <string name="subscribe_title">Prenumeration av paket</string>
+    <string name="subscribe_description_inactive">Om du har ett aktivt prenumerationspaket kan du avsluta tjänsten via knappen nedan.</string>
+    <string name="subscribe_description_active">Du har ett aktivt prenumerationspaket.\nVill du avsluta tjänsten gör du det via knappen nedan.</string>
+    <string name="subscribe_dialog_message">Är du säker på att du vill avsluta din prenumeration?</string>
+
+    <string name="login_failed_dialog_title">Oj</string>
+    <string name="login_failed_dialog_message">Det uppstod ett fel när du försökte logga in.\nKontrollera ditt lösenord och försök igen.</string>
+    <string name="login_failed_wrong_user">Felaktig e-post eller lösenord!\nVänligen försök igen.</string>
+    <string name="login_screen_title">Dags att svettas</string>
+    <string name="logout_no_internet_alert_message">Du måste vara online för att kunna logga ut.</string>
+    <string name="logout_no_internet_alert_title">Varning</string>
+    <string name="forgot_password_changed_dialog_title">Forgot Password</string>
+    <string name="forgot_password_changed_dialog_message">Password Changed</string>
+
+    <string name="string_activ_prenumeration">Aktiv prenumeration</string>
+    <string name="not_enough_data">Inte tillräckligt med information ännu</string>
+
+    <string name="instructions">INSTRUKTIONER</string>
+    <string name="read_here">LÄS HÄR</string>
+    <string name="close">STÄNG</string>
+
+    <string name="message_status_sending">Skickar</string>
+    <string name="message_status_sent">Skickat</string>
+    <string name="message_status_received">Mottaget</string>
+    <string name="message_status_read">Läst</string>
+</resources>

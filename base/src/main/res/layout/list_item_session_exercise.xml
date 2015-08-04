@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/image_view_exercise_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true" />
+
+    <nu.pto.androidapp.base.ui.PtoTextView
+        android:id="@+id/text_view_exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_view_exercise_image"
+        android:layout_toLeftOf="@+id/image_view_expandable_indicator"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:textSize="16dp"
+        android:text=""
+        app:font_name="@string/FONT_REGULAR"
+        android:textColor="#323232" />
+
+    <ImageView
+        android:id="@+id/image_view_expandable_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

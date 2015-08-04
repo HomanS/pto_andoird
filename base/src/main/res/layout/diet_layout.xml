@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF">
+
+		<nu.pto.androidapp.base.ui.PtoTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/dietTitle"
+			android:gravity="center"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp"
+            android:textSize="20dp"
+			android:textColor="#000000"/>
+
+		<ImageView
+			android:id="@+id/dietImage"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+			/>
+
+		<nu.pto.androidapp.base.ui.PtoTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/dietDescription"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="10dp"
+			android:textColor="#000000"/>
+
+	</LinearLayout>
+</ScrollView>

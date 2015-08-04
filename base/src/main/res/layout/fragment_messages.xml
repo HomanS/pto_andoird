@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list_view_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:divider="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="8">
+
+        <EditText
+            android:id="@+id/message_text_fragment_messages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:maxLines="4"
+            style="@style/edit_text_normal_default" />
+
+        <nu.pto.androidapp.base.ui.PtoButton
+            android:id="@+id/message_send_fragment_messages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/string_send"
+            android:background="#323232"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center|bottom" />
+    </LinearLayout>
+</RelativeLayout>

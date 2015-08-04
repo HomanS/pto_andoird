@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+        <ImageView
+            android:id="@+id/iv_workout_scroll_view_item"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/workout_default_back"/>
+
+        <nu.pto.androidapp.base.ui.HUDView
+            android:id="@+id/workout_scroll_view_hudview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/workout_status" />
+</merge>

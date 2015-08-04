@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fragment_bg"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <nu.pto.androidapp.base.ui.PtoButton
+                    android:id="@+id/training_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@drawable/selector_button"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_title_workouts"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    app:font_name="@string/FONT_MEDIUM"/>
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            <nu.pto.androidapp.base.ui.PtoButton
+                    android:id="@+id/log_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@drawable/selector_button"
+                    android:padding="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/workout_log_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    app:font_name="@string/FONT_MEDIUM"/>
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/workout_list_fragment_workout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:divider="#10323232"
+                android:dividerHeight="2px"
+                android:listSelector="@drawable/selector_workout_item"
+                >
+        </ListView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/fl_workout_desc"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="#dd000000"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:clickable="true">
+
+        <FrameLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                >
+            <ImageButton
+                    android:id="@+id/ib_close"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"/>
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/tv_workout_title"
+                    android:layout_marginTop="70dp"
+                    android:padding="20dp"
+                    android:text="asd"
+                    app:font_name="@string/FONT_BOLD"
+                    android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/tv_workout_desc"
+                    android:layout_marginTop="120dp"
+                    android:padding="20dp"
+                    android:text="asd"
+                    android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    </style>
+
+
+    <style name="login_login_text">
+        <item name="android:background">@drawable/edit_text_shape_top_radius</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="login_password_text">
+        <item name="android:background">@drawable/edit_text_shape_bottom_radius</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="forgot_password_text">
+        <item name="android:background">@drawable/edit_text_shape_radius</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <!-- begin default styles -->
+
+    <style name="text_view_default_default">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/edit_text_shape_top_radius</item>-->
+    </style>
+
+    <style name="text_view_title_default">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <!--<item name="android:background">@drawable/edit_text_shape_top_radius</item>-->
+    </style>
+
+    <style name="text_view_normal_default">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <!--<item name="android:background">@drawable/edit_text_shape_top_radius</item>-->
+    </style>
+    <style name="text_view_technical_support_text">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <!--<item name="android:background">@drawable/edit_text_shape_top_radius</item>-->
+    </style>
+
+    <style name="text_view_normal_bold_default" parent="text_view_normal_default">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="edit_text_normal_default">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/edit_text_shape_no_radius</item>
+    </style>
+
+
+    <!-- end default styles -->
+
+
+    <!-- begin home page style -->
+    <style name="trainer_name_start">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#1d1d1d</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <style name="heading_start">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#1d1d1d</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="first_section_text_normal_start">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#1d1d1d</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="first_section_text_small_start">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#1d1d1d</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+
+    <style name="text_view_main_home">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="text_view_workout_end_date">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+
+    <style name="text_view_bold_home">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ImageViewRoundIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/icon_round</item>
+    </style>
+
+
+    <style name="ImageViewRoundIcon.Message">
+        <item name="android:padding">9dp</item>
+        <item name="android:src">@drawable/icon_mail</item>
+    </style>
+
+    <style name="ImageViewRoundIcon.Diet">
+        <item name="android:padding">8dp</item>
+        <item name="android:src">@drawable/icon_food</item>
+    </style>
+
+    <style name="ImageViewRoundIcon.Workout">
+        <item name="android:padding">9dp</item>
+        <item name="android:src">@drawable/icon_workout</item>
+    </style>
+
+    <style name="linear_layout_row_home">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="view_line_divider_home">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">#10323232</item>
+    </style>
+
+    <style name="text_view_titles_home">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="image_view_arrow_right_home">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- end home page style -->
+
+    <!-- begin login page style -->
+    <style name="text_view_main_login">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+	<style name="Button">
+		<item name="android:background">@drawable/shape_button</item>
+		<!--<item name="android:layout_height">55dp</item>-->
+		<item name="android:textColor">#FFFFFF</item>
+
+	</style>
+
+	<style name="Button.Inactive">
+		<item name="android:background">@drawable/shape_button_inactive</item>
+	</style>
+
+    <!-- end login page style -->
+
+
+    <!-- begin settings page style -->
+
+    <style name="linear_layout_row_settings">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+    </style>
+
+    <style name="image_view_icons_settings">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="text_view_main_settings">
+        <item name="android:textColor">#202020</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- end settings page style -->
+
+    <!-- begin CustomActionBarActivity style -->
+
+    <style name="edit_text_custom_action_bar_activity">
+        <item name="android:background">@drawable/edit_text_shape_radius</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <!-- begin CustomActionBarActivity style -->
+
+    <!-- begin workout style -->
+
+
+    <!-- end workout style -->
+
+    <!-- Begin Loading Dialog Style -->
+
+    <style name="LoadingDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_linear_layout_fragment_start_"
+    style="@style/linear_layout_row_home"
+    android:background="@android:color/white"
+    >
+
+	<ImageView
+		style="@style/ImageViewRoundIcon.Diet"/>
+
+    <nu.pto.androidapp.base.ui.PtoTextView
+        android:id="@+id/type_layout_activity"
+        style="@style/text_view_main_home"
+        app:font_name="@string/FONT_REGULAR" />
+
+    <nu.pto.androidapp.base.ui.PtoTextView
+        android:id="@+id/name_layout_activity"
+        style="@style/text_view_bold_home"
+        app:font_name="@string/FONT_BOLD" />
+</LinearLayout>

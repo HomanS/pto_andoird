@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white"
+		android:orientation="vertical"
+		android:padding="20dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:id="@+id/client_photo_fragment_settings"
+				android:layout_width="@dimen/fragment_settings_image_size"
+				android:layout_height="@dimen/fragment_settings_image_size"
+				android:adjustViewBounds="true"
+				android:scaleType="centerCrop"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:orientation="vertical">
+
+				<nu.pto.androidapp.base.ui.PtoTextView
+					android:id="@+id/client_full_name_fragment_settings"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@android:color/black"
+					android:textSize="@dimen/fragment_settings_tv_name"
+					app:font_name="@string/FONT_BOLD"
+                    android:padding="6dp"/>
+
+				<LinearLayout style="@style/linear_layout_row_settings">
+
+					<ImageView
+						style="@style/image_view_icons_settings"
+						android:padding="6dp"
+						android:src="@drawable/icon_phone"/>
+
+					<nu.pto.androidapp.base.ui.PtoTextView
+						android:id="@+id/client_phone_number_fragment_settings"
+						style="@style/text_view_main_settings"
+						app:font_name="@string/FONT_REGULAR"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/linear_layout_row_settings">
+
+					<ImageView
+						style="@style/image_view_icons_settings"
+						android:padding="6dp"
+						android:src="@drawable/icon_mail"/>
+
+					<nu.pto.androidapp.base.ui.PtoTextView
+						android:id="@+id/client_email_fragment_settings"
+						style="@style/text_view_main_settings"
+						app:font_name="@string/FONT_REGULAR"/>
+				</LinearLayout>
+
+				<LinearLayout style="@style/linear_layout_row_settings">
+
+					<ImageView
+						style="@style/image_view_icons_settings"
+						android:padding="4dp"
+						android:src="@drawable/icon_calendar"/>
+
+					<nu.pto.androidapp.base.ui.PtoTextView
+						android:id="@+id/client_date_of_birth_fragment_settings"
+						style="@style/text_view_main_settings"
+						app:font_name="@string/FONT_REGULAR"/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<nu.pto.androidapp.base.ui.PtoButton
+			android:id="@+id/b_personal_info_settings"
+			style="@style/Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp"
+			android:gravity="center"
+			android:text="@string/string_change_personal_info"
+			android:textSize="@dimen/auth_fragment_font_size"
+			app:font_name="@string/FONT_REGULAR"/>
+
+		<nu.pto.androidapp.base.ui.PtoButton
+			android:id="@+id/button_change_password"
+			style="@style/Button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="5dp"
+			android:text="@string/string_change_password"
+			android:textSize="@dimen/auth_fragment_font_size"
+			app:font_name="@string/FONT_REGULAR"/>
+
+
+		<nu.pto.androidapp.base.ui.PtoTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/subscribe_title"
+			android:textStyle="bold"
+			android:layout_marginTop="25dp"
+			/>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+		    android:id="@+id/subscribeInactive"
+			>
+
+			<nu.pto.androidapp.base.ui.PtoTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/subscribe_description_inactive"
+				android:layout_marginBottom="15dp"
+				/>
+
+			<nu.pto.androidapp.base.ui.PtoButton
+				style="@style/Button.Inactive"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="5dp"
+				android:text="@string/button_subscribe_text"
+				android:textAllCaps="true"
+				android:textSize="@dimen/auth_fragment_font_size"
+				app:font_name="@string/FONT_REGULAR"/>
+		</LinearLayout>
+
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:id="@+id/subscribeActive"
+			>
+
+			<nu.pto.androidapp.base.ui.PtoTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/subscribe_description_active"
+				android:layout_marginBottom="15dp"
+				/>
+
+			<nu.pto.androidapp.base.ui.PtoButton
+				android:id="@+id/buttonUnSubscribe"
+				style="@style/Button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="5dp"
+				android:text="@string/button_subscribe_text"
+				android:textAllCaps="true"
+				android:textSize="@dimen/auth_fragment_font_size"
+				app:font_name="@string/FONT_REGULAR"/>
+
+
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

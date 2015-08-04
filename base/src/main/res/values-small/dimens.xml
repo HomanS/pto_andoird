@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start auth dimensions -->
+    <dimen name="auth_fragment_login_margin_top">50dp</dimen>
+    <dimen name="auth_fragment_logo_font_size">60dp</dimen>
+    <dimen name="auth_fragment_logo_font_size_plus">85dp</dimen>
+    <dimen name="auth_fragment_logo_margin_bottom">30dp</dimen>
+    <dimen name="auth_fragment_margin_left_right">18dp</dimen>
+    <dimen name="auth_fragment_font_size">15dp</dimen>
+    <dimen name="auth_fragment_font_size_small">13dp</dimen>
+    <!-- end auth dimensions -->
+
+    <!-- start homepage dimensions -->
+    <!-- end homepage dimensions -->
+
+
+    <!-- activity_app -->
+
+    <dimen name="workout_view_pager_height">80dp</dimen>
+</resources>
+    <!--   small   -->

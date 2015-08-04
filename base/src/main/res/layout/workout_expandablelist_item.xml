@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <nu.pto.androidapp.base.ui.TimerView
+        android:id="@+id/timer_view_workout_expandable_list_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/top_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/timer_view_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/timer_linear_layout_hover"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/hud_color"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/label_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/string_start_timer"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/label_text_tv"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </nu.pto.androidapp.base.ui.TimerView>
+
+    <RelativeLayout
+        android:id="@+id/repeat_relative_layout_workout_expandable_list_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/repeat_icon_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_repeat" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/repeat_icon_workout_expandable_list_group"
+            android:paddingLeft="10dp"
+            android:text="@string/string_repeat" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/repeat_set_value_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/repeat_set_unit_workout_expandable_list_group"
+            android:paddingRight="15dp" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/repeat_set_unit_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/string_time_unit" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e8e8e8"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight_relative_layout_workout_expandable_list_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/weight_icon_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_weight" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/weight_icon_workout_expandable_list_group"
+            android:paddingLeft="10dp"
+            android:text="@string/string_effort" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/weight_set_value_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/weight_set_unit_workout_expandable_list_group"
+            android:paddingRight="15dp"/>
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/weight_set_unit_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e8e8e8"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <nu.pto.androidapp.base.ui.TimerView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </nu.pto.androidapp.base.ui.TimerView>
+
+    <RelativeLayout
+        android:id="@+id/rest_relative_layout_workout_expandable_list_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/rest_icon_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_rest" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rest_icon_workout_expandable_list_group"
+            android:paddingLeft="10dp"
+            android:text="@string/string_rest" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/rest_set_value_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rest_set_unit_workout_expandable_list_group"
+            android:paddingRight="15dp" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/rest_set_unit_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e8e8e8"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/distance_relative_layout_workout_expandable_list_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/distance_icon_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_distance" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/distance_icon_workout_expandable_list_group"
+            android:paddingLeft="10dp"
+            android:text="@string/string_distance" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/distance_set_value_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/distance_set_unit_workout_expandable_list_group"
+            android:paddingRight="15dp" />
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            android:id="@+id/distance_set_unit_workout_expandable_list_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e8e8e8"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

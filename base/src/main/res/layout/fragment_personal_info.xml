@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/nu.pto.androidapp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <nu.pto.androidapp.base.ui.PtoTextView
+            style="@style/text_view_title_default"
+            android:text="@string/string_personal_info" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    style="@style/text_view_normal_default"
+                    android:text="@string/string_first_name" />
+
+                <EditText
+                    android:id="@+id/personal_info_first_name"
+                    style="@style/edit_text_normal_default" />
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    style="@style/text_view_normal_default"
+                    android:text="@string/string_mobile_phone_number" />
+
+                <EditText
+                    android:id="@+id/personal_info_phone_number"
+                    style="@style/edit_text_normal_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    style="@style/text_view_normal_default"
+                    android:text="@string/string_last_name" />
+
+                <EditText
+                    android:id="@+id/personal_info_last_name"
+                    style="@style/edit_text_normal_default"/>
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    style="@style/text_view_normal_default"
+                    android:text="@string/dialog_title_year_of_birth" />
+
+                <EditText
+                    android:id="@+id/et_date_of_birth_personal_info"
+                    style="@style/edit_text_normal_default"
+                    android:editable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                style="@style/text_view_normal_default"
+                android:text="@string/string_email" />
+
+            <EditText
+                android:id="@+id/personal_info_mail"
+                style="@style/edit_text_normal_default" />
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                style="@style/text_view_title_default"
+                android:text="@string/string_profile" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/personal_info_photo"
+                    android:layout_width="@dimen/fragment_personal_info_picture_size"
+                    android:layout_height="@dimen/fragment_personal_info_picture_size"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <nu.pto.androidapp.base.ui.PtoTextView
+                        style="@style/text_view_normal_default"
+                        android:text="@string/string_change_picture" />
+
+                    <nu.pto.androidapp.base.ui.PtoButton
+                        android:id="@+id/personal_info_change_picture_button"
+                        style="@style/Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_change_picture_button" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

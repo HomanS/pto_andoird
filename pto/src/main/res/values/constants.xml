@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_base_url">https://pto.nu</string>
+    <!--<string name="api_base_url">http://192.168.1.123/pto</string>-->
+    <string name="basic_auth_login"></string>
+    <string name="basic_auth_password"></string>
+    <string name="is_lofsan">0</string>
+    <string name="is_eleiko">0</string>
+    <string name="support_email">info@pto.nu</string>
+    <string name="google_play_url">https://play.google.com/store/apps/details?id=nu.pto.androidapp</string>
+    <string name="gcm_sender_id">934716088781</string>
+
+</resources>

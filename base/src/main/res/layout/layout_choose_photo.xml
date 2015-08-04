@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp">
+    <nu.pto.androidapp.base.ui.PtoButton
+        android:id="@+id/b_from_library_choose_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/string_photo_from_library"
+        android:layout_weight="1"/>
+    <nu.pto.androidapp.base.ui.PtoButton
+        android:id="@+id/b_from_camera_choose_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/string_photo_from_camera"
+        android:layout_weight="1"/>
+    <nu.pto.androidapp.base.ui.PtoButton
+        android:id="@+id/b_cancel_choose_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/string_cancel"
+        android:layout_weight="1"/>
+</LinearLayout>

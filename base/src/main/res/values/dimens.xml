@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_app_title">20dp</dimen>
+    <dimen name="activity_app_title_padding">15dp</dimen>
+    <dimen name="fragment_settings_image_size">150dp</dimen>
+    <dimen name="fragment_settings_tv_name">18dp</dimen>
+    <dimen name="fragment_personal_info_picture_size">110dp</dimen>
+    <dimen name="iv_width_trainer_image_fragment_start">110dp</dimen>
+    <dimen name="iv_height_trainer_image_fragment_start">110dp</dimen>
+    <dimen name="iv_large_activity_log_padding">9dp</dimen>
+    <dimen name="iv_small_activity_log_padding">8dp</dimen>
+
+
+    <dimen name="tv_size_statistics">15dp</dimen>
+    <dimen name="tv_axe_statistics">10dp</dimen>
+    <dimen name="circle_radius_statistics">8dp</dimen>
+    <dimen name="padding_y_axe_statistics">25dp</dimen>
+    <dimen name="margin_statistics">35dp</dimen>
+    <dimen name="list_view_activity_home_page">215dp</dimen>
+    <dimen name="workout_view_pager_height">130dp</dimen>
+
+
+</resources>

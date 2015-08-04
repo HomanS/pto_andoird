@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nu.pto.androidapp.base.util.BaseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfbfb"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auth_fragment_login_margin_top"
+                android:layout_marginBottom="@dimen/auth_fragment_logo_margin_bottom"
+                android:padding="30dp"
+                android:src="@drawable/logo" />
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/login_screen_title"
+                android:textColor="#666666"
+                android:textSize="@dimen/auth_fragment_font_size"
+                app:font_name="@string/FONT_REGULAR" />
+
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/auth_fragment_margin_left_right"
+                android:layout_marginRight="@dimen/auth_fragment_margin_left_right">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/login_login_text"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@string/FONT_REGULAR"
+                    android:hint="@string/string_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/auth_fragment_font_size" />
+
+
+                <ImageButton
+                    android:id="@+id/clear_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/clear"
+                    android:background="@android:color/transparent" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/auth_fragment_margin_left_right"
+                android:layout_marginRight="@dimen/auth_fragment_margin_left_right">
+
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/login_password_text"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@string/FONT_REGULAR"
+                    android:hint="@string/string_password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/auth_fragment_font_size" />
+
+                <ImageButton
+                    android:id="@+id/clear_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/clear"
+                    android:background="@android:color/transparent" />
+            </FrameLayout>
+
+
+            <nu.pto.androidapp.base.ui.PtoButton
+                android:id="@+id/buttonLogin"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/auth_fragment_margin_left_right"
+                android:layout_marginRight="@dimen/auth_fragment_margin_left_right"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/string_login"
+                android:textSize="@dimen/auth_fragment_font_size"
+                app:font_name="@string/FONT_REGULAR" />
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                android:id="@+id/textViewForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:autoLink="all"
+                android:gravity="center"
+                android:linksClickable="false"
+                android:selectAllOnFocus="false"
+                android:text="@string/string_forgot_password"
+                android:textColor="#787878"
+                android:textSize="@dimen/auth_fragment_font_size_small"
+                app:font_name="@string/FONT_REGULAR" />
+        </LinearLayout>
+
+    </ScrollView>
+</nu.pto.androidapp.base.util.BaseFrameLayout>

@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/root_view_fragment_workout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/linear_layout_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/header_relative_layout_fragment_workout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/ptv_exercise_name_fragment_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#1d1d1d"
+                    android:textSize="16dp"
+                    app:font_name="@string/FONT_REGULAR"/>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_fragment_workout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/workout_view_pager_height"
+                android:background="#ffffff"
+                android:visibility="gone"/>
+
+        <LinearLayout
+                android:id="@+id/view_pager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"/>
+
+        <LinearLayout
+                android:id="@+id/ll_instructions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#e7e7e7"
+                    />
+
+            <FrameLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:src="@drawable/info_icon"
+                           android:layout_marginLeft="20dp"
+                        android:layout_gravity="center_vertical"                        />
+
+                <nu.pto.androidapp.base.ui.PtoTextView android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:text="@string/instructions"
+                                                  app:font_name="@string/FONT_REGULAR"
+                                                  android:textSize="16sp"
+                                                  android:layout_gravity="center_vertical"
+                                                  android:gravity="center_vertical"
+                                                  android:layout_marginLeft="55dp"
+
+                        />
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                        android:id="@+id/tv_read_here"
+                        android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:text="@string/read_here"
+                                                  app:font_name="@string/FONT_REGULAR"
+                                                  android:textSize="16sp"
+                                                  android:layout_marginLeft="40dp"
+                                                  android:layout_gravity="right|center_vertical"
+                                                  android:textColor="#e7e7e7"
+                                                  android:gravity="center_vertical"
+                                                  android:layout_marginRight="20dp"
+                        />
+
+            </FrameLayout>
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/view_pager_image_name"
+                    style="@style/text_view_main_home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:singleLine="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:gravity="left"/>
+
+        </LinearLayout>
+
+
+        <ExpandableListView
+                android:id="@+id/lv_expandable_fragment_workout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/white"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null"
+                android:paddingBottom="100dp"
+                android:listSelector="@color/set_bg"
+            />
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+            android:id="@+id/scroll_view_fragment_workout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="#171717"/>
+
+    <RelativeLayout
+            android:id="@+id/workout_session_timer_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:visibility="gone"
+            android:clickable="true">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_training_paused"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"
+                    app:font_name="@string/FONT_REGULAR"/>
+
+            <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/workout_session_timer_view_time_passed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp"
+                    app:font_name="@string/FONT_REGULAR"/>
+
+            <ImageView
+                    android:id="@+id/workout_session_timer_view_resume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_round"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

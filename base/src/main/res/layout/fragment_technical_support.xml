@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res/nu.pto.androidapp"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@android:color/white"
+                  android:padding="25dp">
+        <nu.pto.androidapp.base.ui.PtoTextView
+                android:id="@+id/tv_name_fragment_technical_support"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_title_default"
+                font_name="@string/FONT_BOLD"/>
+        <nu.pto.androidapp.base.ui.PtoTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_support_text"
+                style="@style/text_view_technical_support_text"
+                font_name="@string/FONT_REGULAR"/>
+        <nu.pto.androidapp.base.ui.PtoButton
+                android:id="@+id/b_email_tech_support_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_support_via_email"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="@dimen/auth_fragment_font_size"
+                style="@style/Button"
+                font_name="@string/FONT_REGULAR"
+                android:layout_marginTop="20dp"/>
+        <nu.pto.androidapp.base.ui.PtoButton
+                android:id="@+id/b_phone_tech_support_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_support_via_phone"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/auth_fragment_font_size"
+                android:visibility="gone"
+                style="@style/Button"
+                font_name="@string/FONT_REGULAR"
+                android:layout_marginTop="5dp"/>
+        <nu.pto.androidapp.base.ui.PtoButton
+                android:id="@+id/b_sms_tech_support_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_support_via_sms"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/auth_fragment_font_size"
+                android:visibility="gone"
+                style="@style/Button"
+                font_name="@string/FONT_REGULAR"
+                android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+</ScrollView>

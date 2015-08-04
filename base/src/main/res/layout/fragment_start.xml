@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"            >
+
+            <ImageView
+                android:id="@+id/iv_trainer_fragment_start"
+                android:layout_width="@dimen/iv_width_trainer_image_fragment_start"
+                android:layout_height="@dimen/iv_height_trainer_image_fragment_start"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <nu.pto.androidapp.base.ui.PtoTextView
+                        style="@style/first_section_text_small_start"
+                        android:text="@string/string_personal_trainer"
+                        app:font_name="@string/FONT_REGULAR"
+                        android:layout_weight="1"
+                        />
+
+                    <nu.pto.androidapp.base.ui.PtoTextView
+                        android:id="@+id/trainer_name_fragment_start"
+                        style="@style/trainer_name_start"
+                        android:lineSpacingExtra="0.5dp"
+                        android:lineSpacingMultiplier="0.8"
+                        android:layout_weight="1"
+                        app:font_name="@string/FONT_BOLD"
+                        />
+                </LinearLayout>
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/package_name_fragment_start"
+                    style="@style/first_section_text_normal_start"
+                    android:layout_weight="1"
+                    app:font_name="@string/FONT_REGULAR" />
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    android:id="@+id/package_date_fragment_start"
+                    style="@style/first_section_text_normal_start"
+                    android:layout_weight="1"
+                    app:font_name="@string/FONT_REGULAR" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    style="@style/heading_start"
+                    android:text="@string/string_activity_log"
+                    app:font_name="@string/FONT_BOLD"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/imageViewRightActivities"
+                    style="@style/image_view_arrow_right_home"
+                    android:src="@drawable/arrow"
+                    android:padding="5dp"/>
+            </RelativeLayout>
+
+            <View style="@style/view_line_divider_home" />
+
+
+            <ListView
+                android:id="@+id/lv_layout_activity_fragment_start"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_view_activity_home_page"
+                android:clickable="true"
+                android:divider="#10323232"
+                android:dividerHeight="2px" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp">
+
+                <nu.pto.androidapp.base.ui.PtoTextView
+                    style="@style/heading_start"
+                    android:text="@string/string_messages"
+                    app:font_name="@string/FONT_BOLD" />
+                <ImageView
+                    android:id="@+id/imageViewRightMessages"
+                    style="@style/image_view_arrow_right_home"
+                    android:src="@drawable/arrow"
+                    android:padding="5dp"/>
+            </RelativeLayout>
+
+            <View style="@style/view_line_divider_home" />
+
+            <LinearLayout
+                android:id="@+id/message_fragment_start"
+                style="@style/linear_layout_row_home">
+
+                <ImageView style="@style/ImageViewRoundIcon.Message" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <nu.pto.androidapp.base.ui.PtoTextView
+                        android:id="@+id/message_from_fragment_start"
+                        style="@style/text_view_main_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+
+                    <nu.pto.androidapp.base.ui.PtoTextView
+                        android:id="@+id/message_text_fragment_start"
+                        style="@style/text_view_main_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view_line_divider_home" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
